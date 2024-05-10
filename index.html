@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Game List</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="d__flex">
+    <header class="header__container">
+      <h1 class="drop__shadow">My Game List</h1>
+    </header>
+    <main>
+      <div class="d__flex container__game drop__shadow border__radius">
+        <div class="d__flex" id="gameSelection">
+          <h1>Choisissez une liste</h1>
+          <select
+            class="border__radius border__style margTB__15 pad__8"
+            id="gameSelector"
+          >
+            <option value="1">Jeu 1 : Mots</option>
+            <option value="2">Jeu 2 : Phrases</option>
+          </select>
+          <button class="border__radius border__style" id="startGameButton">
+            Commencer le jeu
+          </button>
+        </div>
+        <div id="game" style="display: none">
+          <p class="padB__10" id="arrayList"></p>
+          <div class="container__numbers d__flex">
+            <div class="first__number d__flex">
+              <h2>1, 2, 3 Recopiez !</h2>
+              <p class="padT__15" id="indexList"></p>
+
+              <input
+                class="pad__8 margTB__15 border__style border__radius"
+                type="text"
+                id="inputGameList"
+              />
+              <button class="border__style border__radius" id="validateButton">
+                Validez !
+              </button>
+              <button
+                class="border__style border__radius d-none"
+                id="restartButton"
+                style="display: none"
+              >
+                Rejouez !
+              </button>
+            </div>
+          </div>
+        </div>
+        <p class="padT__15" id="result"></p>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
